@@ -77,7 +77,7 @@ while tag == 'true':
     sum_df = sum_df.T
 
     file_timestamp = pd.Timestamp(start_time).strftime('%Y%m%d_%H%M')
-    event_file_name = f'airline_dashboard/live_graph_data/cancl_airline/cancl_airline_{file_timestamp}.csv'
+    event_file_name = f'airline_dashboard_app/live_graph_data/cancl_airline/cancl_airline_{file_timestamp}.csv'
     sum_df['TIMESTAMP'] = file_timestamp
 
     ###
