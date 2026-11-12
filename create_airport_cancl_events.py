@@ -94,7 +94,7 @@ while tag == 'true':
     export_data_df = export_data_df.fillna(0)
 
     file_timestamp = pd.Timestamp(start_time).strftime('%Y%m%d_%H%M')
-    event_file_name = f'airline_dashboard/live_graph_data/cancl_airports/cancl_airports_{file_timestamp}.csv'
+    event_file_name = f'airline_dashboard_app/live_graph_data/cancl_airports/cancl_airports_{file_timestamp}.csv'
     sum_df['TIMESTAMP'] = file_timestamp
 
     export_data_df.to_csv(event_file_name)
